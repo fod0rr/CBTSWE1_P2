@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+         id="WebApp_ID" version="3.1">
+
+  <display-name>gerenciador</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+  <!-- AddCustomer -->
+  <servlet>
+    <servlet-name>AddCustomerServlet</servlet-name>
+    <servlet-class>gerenciador.AddCustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCustomerServlet</servlet-name>
+    <url-pattern>/addCustomer</url-pattern>
+  </servlet-mapping>
+
+  <!-- AddSalesman -->
+  <servlet>
+    <servlet-name>AddSalesmanServlet</servlet-name>
+    <servlet-class>gerenciador.AddSalesmanServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddSalesmanServlet</servlet-name>
+    <url-pattern>/addSalesman</url-pattern>
+  </servlet-mapping>
+
+  <!-- AddOrder -->
+  <servlet>
+    <servlet-name>AddOrderServlet</servlet-name>
+    <servlet-class>gerenciador.AddOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddOrderServlet</servlet-name>
+    <url-pattern>/addOrder</url-pattern>
+  </servlet-mapping>
+
+  <!-- DeleteCustomer -->
+  <servlet>
+    <servlet-name>DeleteCustomerServlet</servlet-name>
+    <servlet-class>gerenciador.DeleteCustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCustomerServlet</servlet-name>
+    <url-pattern>/deleteCustomer</url-pattern>
+  </servlet-mapping>
+
+  <!-- DeleteSalesman -->
+  <servlet>
+    <servlet-name>DeleteSalesmanServlet</servlet-name>
+    <servlet-class>gerenciador.DeleteSalesmanServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteSalesmanServlet</servlet-name>
+    <url-pattern>/deleteSalesman</url-pattern>
+  </servlet-mapping>
+
+  <!-- DeleteOrder -->
+  <servlet>
+    <servlet-name>DeleteOrderServlet</servlet-name>
+    <servlet-class>gerenciador.DeleteOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteOrderServlet</servlet-name>
+    <url-pattern>/deleteOrder</url-pattern>
+  </servlet-mapping>
+
+  <!-- EditCustomer -->
+  <servlet>
+    <servlet-name>EditCustomerServlet</servlet-name>
+    <servlet-class>gerenciador.EditCustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditCustomerServlet</servlet-name>
+    <url-pattern>/editCustomer</url-pattern>
+  </servlet-mapping>
+
+  <!-- EditSalesman -->
+  <servlet>
+    <servlet-name>EditSalesmanServlet</servlet-name>
+    <servlet-class>gerenciador.EditSalesmanServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditSalesmanServlet</servlet-name>
+    <url-pattern>/editSalesman</url-pattern>
+  </servlet-mapping>
+
+  <!-- EditOrder -->
+  <servlet>
+    <servlet-name>EditOrderServlet</servlet-name>
+    <servlet-class>gerenciador.EditOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditOrderServlet</servlet-name>
+    <url-pattern>/editOrder</url-pattern>
+  </servlet-mapping>
+
+</web-app>
