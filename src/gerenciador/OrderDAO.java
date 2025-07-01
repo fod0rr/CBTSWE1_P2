@@ -12,9 +12,9 @@ public class OrderDAO {
     public OrderDAO() throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.cj.jdbc.Driver");
         this.conn = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/p2?serverTimezone=America/Sao_Paulo",
+            "jdbc:mysql://localhost:3306/servlet?serverTimezone=America/Sao_Paulo",
             "root",
-            "*Arcane315"
+            "*Consagrado712"
         );
     }
 
